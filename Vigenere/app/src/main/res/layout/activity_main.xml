@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/plaintext_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plaintext:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/plaintext_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/plaintext_label"
+        android:hint="Enter plaintext"
+        android:inputType="text" />
+<TextView
+    android:id="@+id/key_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/plaintext_edit_text"
+    android:layout_marginTop="16dp"
+    android:text="Key:"
+    android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/key_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/key_label"
+        android:hint="Enter encryption key"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/encrypt_button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/key_edit_text"
+        android:layout_marginTop="16dp"
+        android:text="Encrypt" />
+
+    <Button
+        android:id="@+id/decrypt_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/encrypt_button"
+        android:layout_marginTop="8dp"
+        android:text="Decrypt" />
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decrypt_button"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp" />
+
+</RelativeLayout>
